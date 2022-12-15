@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+         #second-nav{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            padding: 40px 0px 18px 0px;
+            align-items: center;
+            /* border: 2px solid red ; */
+            position: sticky;
+            top: 0px;
+        }
+        #sign{
+            padding-top: 12px;
+        }
+
+
+        #location{
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            margin: 10px;
+            margin-left: 30px;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+        #nav-links{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .top-buttons{
+            margin-left: 50px;
+        }
+       
+        .nav-orders{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        } 
+
+        .nav-orders>div{
+            margin: 0px 10px;
+        } 
+
+        #amount{
+          display: flex;
+          padding-top: 17px ;
+        }
+        #amount img{
+            width: 65px;
+            height: 65px;
+        }
+        #profile{
+            width: 25px;
+            height: 25px;
+            padding-top: 15px;
+        }
+        #amount span{
+            padding: 30px 5px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        .nav-orders > p{
+            padding: 10px;
+            margin: 5px;
+        }
+        
+       
+        #second-nav a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="second-nav">
+        <nav>   
+            <div id="nav-links">
+                <a href="./Homepage.html"><h1 class="top-buttons" id="KFC"> <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt=""></h1></a>
+                <h3 class="top-buttons"><a href="">Menu</a></h3>
+                <h3 class="top-buttons"><a href="">Deals</a></h3>
+                
+            </div>
+        </nav>
+        <nav>
+            <div class="nav-orders">
+                <div><a href=""><img  id="profile" src=" https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" class="nav-buttons"></a></div>
+               <div> <a href=""><h3 id="sign">Sign In   |</h3> </a></div>
+              <a href="">
+                <div id="amount"> <span>$0</span>
+               
+                  <img id="bucket" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg">
+                </div>
+                </a>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+</body>
+</html>

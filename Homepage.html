@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kfc</title>
+    <!-- <link rel="stylesheet" href="HomePage.css"> -->
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+        } 
+        /* #bag {
+            width: 70px;
+            height: 70px;
+            margin-left: 10px;
+        } */
+        #top-nav{
+            background-color: white;
+            color: black;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+            /* position: fixed;
+            top: 0; */
+            /* margin: 20px 0px; */
+        }
+        /* #fixed{
+            position: fixed;
+            top: 0;
+        } */
+        #second-nav{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            padding: 70px 0px 18px 0px;
+            align-items: center;
+            background-color: white;
+            /* position: sticky; 
+            top:100px; */
+            /* border: 2px solid red ; */
+            /* position: sticky;
+            top: 0px; */
+        }
+        #sign{
+            padding-top: 12px;
+        }
+
+
+        #location{
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            margin: 10px;
+            margin-left: 30px;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+        #nav-links{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .top-buttons{
+            margin-left: 50px;
+        }
+       
+        .nav-orders{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        } 
+
+        .nav-orders>div{
+            margin: 0px 10px;
+        } 
+
+        #amount{
+          display: flex;
+          padding: 5px 0px;
+        }
+        #amount img{
+            width: 65px;
+            height: 65px;
+        }
+        #profile{
+            width: 25px;
+            height: 25px;
+        }
+        #amount span{
+            padding: 25px 5px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        .nav-orders > p{
+            padding: 10px;
+            margin: 5px;
+        }
+        
+       
+        #second-nav a{
+            text-decoration: none;
+            color: black;
+        }
+       #third-bar{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        vertical-align: center;
+        /* border: 2.5px solid orange; */
+        border-top:0px solid black;
+       }
+       #third-bar >span{
+        padding: 15px 0px;
+        font-weight: bold;
+        font-size:large ;
+       }
+        #start-order{
+            padding: 18px 50px;
+            border-radius: 30px;
+            background-color: rgb(163, 15, 15);
+            color: white;
+            border: 0px;
+            font-weight: normal;
+            font-size: 15px;
+            margin: 0px 15px;
+        }  
+        #banner img{
+            width: 100%;
+            height: 450px;
+        }
+        #welcome{
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: 50%;
+            font-size: 44px;
+            line-height: 58px;
+            padding-top: 70px;
+            padding-bottom: 29px;
+            padding: 70px 0px 30px 160px;
+            color: #212529;
+            background-color: rgb(241, 241, 241);
+            font-family:"Gill Sans", sans-serif;;
+
+        }
+        #browse{
+            font-weight: bold;
+            font-style: normal;
+            font-size: 38px;
+            font-stretch: 50%;
+            line-height: 58px;
+            padding: 100px 0px 50px 200px;
+            color: #212529;
+            font-family:"Gill Sans", sans-serif;;
+        }
+        #browse:after{
+            content:" ";
+            height: 2px;
+            width: 840px;
+            background: rgb(239, 237, 237);
+            display: block;
+            position: absolute;
+            top: 137%;
+            right: 0;
+        }
+        
+        /* --------------------------------- body part starts -----------------------*/
+       
+        /* ------------------- ANCHOR TAG ---------------------ANCHOR ---------------- */
+       
+       
+        /* a:hover{
+            text-decoration: underline;
+        } */
+        /* ------------------- Footer part starts ----------------------------------- */
+      
+        #footer{
+            width: 100%;
+            margin: auto;
+            /* margin: 50px 0px; */
+            background-color: black;
+            color: white;
+            
+
+        }
+
+        #footer-middle{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            padding-bottom: 130px;
+        }
+        #footer-middle > div{
+            padding-right: 50px;
+        }
+
+        #words{
+            display: flex;
+           /* justify-content: space-evenly; */
+        }
+    
+        #footer-buttom{
+            display: flex;
+        }
+        #download{
+            display: flex;
+        }
+        #download img{
+            width: 150px;
+        }
+        #footer-top{
+            padding: 70px 0px 40px 20px;
+            margin: auto;
+            width: 80%;
+        }
+        #footer-middle a,h3,p{
+            padding-bottom: 15px; 
+            padding-right: 10px;
+        }
+        #footer  a {
+            text-decoration: none;
+            color: rgb(231, 223, 223);
+        } 
+        #footer a:hover{
+            color: white;
+        }
+        #find-a-kfc{
+            text-decoration: underline;
+        }
+        #footer-bottom{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            width: 80%;
+        }
+        #footer-bottom > div:nth-child(1)
+        {
+            padding: 10px 0px 10px 320px ;
+            font-size: small;
+        }
+        #footer-bottom>div:nth-child(2){
+          
+           margin-left: 200px;
+           padding-left: 200px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="fixed">
+            <div id="top-nav" class="fixed">
+                <span><img src="https://online.kfc.co.in/static/media/Search_Pin.e88a4d93.svg">Allow location access for local store menu and promos<button id="location">Set Location</button></span>
+                <hr>
+            </div>
+          
+
+            <div id="second-nav" class="fixed">
+                <nav>   
+                    <div id="nav-links">
+                        <a href="./Homepage.html"><h1 class="top-buttons" id="KFC"> <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt=""></h1></a>
+                        <h3 class="top-buttons"><a href="./menu.html">Menu</a></h3>
+                        <h3 class="top-buttons"><a href="">Deals</a></h3>
+                        
+                    </div>
+                </nav>
+                <nav>
+                    <div class="nav-orders">
+                        <div>
+                            <a href=""><img  id="profile" src=" https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" class="nav-buttons"></a>
+                        </div>
+                        <div>
+                             <a href=""><h3 id="sign">Sign In   |</h3> </a>
+                        </div>
+                            <a href="">
+                        <div id="amount"> <span>$0</span>
+                            <img id="bucket" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg">
+                        </div>
+                            </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ************************ BODY  ******************************** BODY **************************** -->
+
+    <div id="third-bar">
+        <span>LET'S ORDER FOR DELIVERY,PICK UP,OR DINE-IN</span>
+        <BUTTON id="start-order"> Start Order</BUTTON>
+    </div>
+
+    <div id="banner">
+        <a href=""><img src="https://thebalconystories.com/wp-content/uploads/2022/09/KFC-Peri-Peri-Chicken-Allu-1920x1024.jpg" alt=""></a>
+    </div>
+
+    <div id="welcome">WELCOME TO KFC! </div>
+
+    <div id="browse"> BROWSE CATEGORIES</div>
+    <!-- ****************************************** J A V A *****  S C R I P T ************************* -->
+    <div id="container">
+
+    </div>
+    
+
+
+
+    
+<!--    ************************* FOOTER *************************** FOOTER ************************* -->
+    <footer>
+        <div id="footer">
+            <div id="footer-top">
+                <h1>OFFERS & DEALS</h1>
+            </div>
+            
+
+             <div id="footer-middle">
+                <div id="main-img">
+                    <div id="img-kfc">
+                        <a href=""><img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div id="words">
+                    <div id="kfc-food">
+                        <h3>KFC Food</h3>
+                        <p><a href="">Menu</a></p>
+                        <p><a href="">Order Lookup</a></p>
+                        <p><a href="">Gift Card</a></p>
+                        <p><a href="">Nutrition & Allergen</a></p>
+                    </div>
+                
+
+                    <div id="Support">
+                        <h3>Support</h3>
+                        <p><a href="">Get Help</a></p>
+                        <p><a href="">Contact Us</a></p>
+                        <p><a href="">KFC Feedback</a></p>
+                        <p><a href="">Privacy Policy</a></p>
+                    </div>
+
+                    <div id="Legal">
+                        <h3>Legal</h3>
+                        <p><a href="">Terms and Conditions</a></p>
+                        <p><a href="">Privacy Policy</a></p>
+                        <p><a href="">Desclaimer</a></p>
+                        <p><a href="">Caution Notice</a></p>
+                    </div>
+
+                    <div id="KFC India">
+                        <h3>KFC India</h3>
+                        <p><a href="">ABout KFC</a></p>
+                        <p><a href="">KFC Care</a></p>
+                        <p><a href="">Careers</a></p>
+                        <p><a href="">Our Golden Past</a></p>
+                    </div>
+                </div>
+
+                <div id="find-a-kfc"> 
+                    <h4><a href=""><img src="https://online.kfc.co.in/static/media/Search_Pin.e88a4d93.svg"> Find A KFC</a></h4 >
+                </div>
+
+                <div id="download">
+                    <div><a href=""><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt=""></a></div>
+                    <div><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT2bb-udj1PBKSjp0VHwEQhibmH54V12RtCQ&usqp=CAU" alt=""> </a></div>
+
+                </div>
+
+            </div>
+            
+             <div id="footer-bottom">
+               
+                <div id="copy">
+                    <p>Copyright  KFC Corpation 2022 All Rights Reserved</p>
+                </div>
+
+                <div id="social">
+                    <!-- LOGO HAS TO PROVIDE ------------------------------------------- -->
+                    <p>random Text</p>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+             </div>
+
+
+        </div>
+    </footer>
+</body>
+<script>
+    let container =document.getElementById("container");
+    let banner = document.getElementById("banner");
+    let a = document.createElement("a");
+    // let banner_img = document.createElement("img");
+//     start();
+
+//    var images=["https://thebalconystories.com/wp-content/uploads/2022/09/KFC-Peri-Peri-Chicken-Allu-1920x1024.jpg",
+//    "https://media.gettyimages.com/id/967394660/photo/promotional-atmosphhere-at-kfc-on-april-4-2018-in-orangeburg-south-carolina.jpg?s=612x612&w=gi&k=20&c=8l53sy8unaQ8f33VJAj1btKiIdqwt576JCeiHYvgi5A="
+//     ]
+//     function start() {
+//     let slideImg = document.createElement("img");
+//     let i = 0;
+//     setInterval(() => {
+//         slideImg.src=images[0];
+//         a.append(slideImg);
+//         banner.append(a)
+//     },)
+    
+//         x = setInterval(function () {
+//         if (i == images.length) {
+//             i = 0;
+//         }
+//         slideImg.src = images[i++];
+
+//         a.append(slideImg);
+//         banner.append(a)
+
+//         }, 2000);
+
+   
+//   }
+
+  
+   
+    fetch("")
+    .then((response)=>{
+        return response.json()
+    })
+    .then((data) =>{
+        display(data)
+    })
+    .catch((error) => {
+        console.log(error)
+    });
+
+    function display(data)
+    {
+        data.forEach
+    }
+
+
+
+</script>
+
+
+</html>
